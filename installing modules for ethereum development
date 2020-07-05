@@ -1,0 +1,18 @@
+// installing modules for ethereum development
+
+// before installing the modules
+// run as administrator
+npm install --global --production windows-build-tools
+
+// modules for compilation
+npm install -g solc //disaster
+npm uninstall solc
+npm install --save solc@0.4.17 //this is better
+
+// code to execute compilation
+node compile.js
+
+// installing the packages for testing
+npm install --global mocha
+npm install -g ganache-cli
+npm install web3
